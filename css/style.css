@@ -1,0 +1,129 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background: url(../images/bg-desktop.svg) no-repeat top -2px left 20px;
+  background-color: #674baf;
+  background-size: cover;
+  padding: 64px 80px 40px 80px;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  justify-content: flex-end;
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  line-height: 2em;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.social-icon:hover {
+  color: #e880e8;
+  border-color: #e880e8;
+  transform: translateY(-5px);
+}
+
+.img-logo {
+  margin-bottom: 6.5rem;
+}
+
+.container {
+  display: flex;
+  gap: 59px;
+  margin-bottom: 30px;
+}
+
+.text-group {
+  padding-top: 39px;
+  max-width: 520px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  color: #684bb1;
+  padding: 13px 64px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 2px 4px 9px 3px #00000042;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background: #e880e8;
+  color: #fff;
+  box-shadow: 2px 9px 9px 3px #00000042;
+}
+
+footer {
+  margin-bottom: 20px;
+}
